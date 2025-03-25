@@ -1,9 +1,0 @@
-step 1 > creating env for project using venv
-
-step 2 > starting django app named social_platform
-        checking our app is properly working by starting server
-
-step 3 > create rest of the apps for our project
-         addes the project into installed app list in setting of project
-
-step 3 > adding pathe for media and static forlde tin the setting.py
