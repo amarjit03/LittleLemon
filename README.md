@@ -21,7 +21,7 @@ A modern Django web application for the Little Lemon restaurant, featuring menu 
 1. Clone the repository:
 ```bash
 git clone https://github.com/your-username/36buddy-backend.git
-cd 36buddy-backend
+cd LittleLemon
 ```
 
 2. Create and activate virtual environment:
@@ -37,6 +37,7 @@ pip install -r requirements.txt
 
 4. Apply migrations:
 ```bash
+cd littlelemon
 python manage.py migrate
 ```
 
