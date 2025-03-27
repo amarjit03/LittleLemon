@@ -1,0 +1,57 @@
+{% load static %}
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f8f8;
+        padding: 20px;
+        text-align: center;
+    }
+    .menu-item {
+        background: #fff;
+        padding: 20px;
+        max-width: 400px;
+        margin: 20px auto;
+        border-radius: 10px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        color: #333;
+        margin-bottom: 10px;
+    }
+    img {
+        border-radius: 10px;
+        width: 250px;
+        height: auto;
+    }
+    p {
+        font-size: 18px;
+        color: #555;
+    }
+    a {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 10px 15px;
+        background: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    a:hover {
+        background: #0056b3;
+    }
+</style>
+
+<div class="menu-item">
+    <h1>{{ item.name }}</h1>
+    
+    {% if item.image %}
+        <img src="{{ item.image.url }}" width="250" alt="{{ item.name }}">
+    {% else %}
+        <img src="{% static 'menu_images/default.jpg' %}" width="250" alt="Default Image">
+    {% endif %}
+
+    <p><strong>Price:</strong> ₹{{ item.price }}</p>
+    <p>{{ item.description }}</p>
+
+    <a href="{% url 'menu' %}">Back to Menu</a>
+</div>
