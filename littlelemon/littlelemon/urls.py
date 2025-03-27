@@ -26,5 +26,6 @@ urlpatterns = [
     path('', include('menu.urls')),  
 ]
 
-if settings.DEBUG:
+
+if settings.DEBUG:  # Only serve media in development mode
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

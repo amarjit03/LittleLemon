@@ -2,10 +2,14 @@
 
 {% block content %}
     <div style="text-align: center; margin-top: 50px;">
+
         <h1 style="color: #007bff; font-size: 40px; font-weight: bold;">Welcome to Little Lemon Restaurant</h1>
+
         <p style="color: #6c757d; font-size: 18px;">Delicious food, made fresh for you.</p>
-        <a href="{% url 'menu' %}" style="display: inline-block; padding: 12px 25px; background-color: #ffc107; color: black; 
-                  font-size: 18px; font-weight: bold; text-decoration: none; border-radius: 5px; margin-top: 20px;
-                  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);">View Menu</a>
+
+        <a href="{% url 'menu' %}" 
+        style="display: inline-block; padding: 12px 25px; background-color: #ffc107; color: black; 
+                font-size: 18px; font-weight: bold; text-decoration: none; border-radius: 5px; margin-top: 20px;
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);">View Menu</a>
     </div>
 {% endblock %}

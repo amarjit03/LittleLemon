@@ -45,7 +45,7 @@
     <h1>{{ item.name }}</h1>
     
     {% if item.image %}
-        <img src="{{ item.image.url }}" width="250" alt="{{ item.name }}">
+        <img src="{{ item.image.url }}" width="220" alt="{{ item.name }}">
     {% else %}
         <img src="{% static 'menu_images/default.jpg' %}" width="250" alt="Default Image">
     {% endif %}
