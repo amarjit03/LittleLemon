@@ -49,8 +49,8 @@ Visit `http://localhost:8000` to view the application.
 
 Visit `http://localhost:8000/admin` to acess the admin page.
 
-username amarjit
-password 1235
+## username amarjit 
+## password 1235
 
 ## License
 
