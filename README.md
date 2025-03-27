@@ -47,22 +47,10 @@ python manage.py runserver
 
 Visit `http://localhost:8000` to view the application.
 
-## Project Structure
+Visit `http://localhost:8000/admin` to acess the admin page.
 
-```
-littlelemon/
-├── menu/
-│   ├── templates/
-│   │   ├── base.html
-│   │   ├── menu.html
-│   │   └── about.html
-│   ├── static/
-│   │   └── css/
-│   ├── models.py
-│   ├── views.py
-│   └── urls.py
-└── manage.py
-```
+username amarjit
+password 1235
 
 ## License
 
